@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item-box{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 30px;
+            padding-bottom: 200px;
+            background-color: rgb(0, 136, 255);
+            padding-top: 200px;
+        }
+        #srch{
+            background-color: rgb(255, 116, 116);
+            padding: 10px 20px;
+            border-width: 0px;
+            border-radius: 20px;
+            font-weight: 400;
+            color: white;
+
+        }
+        .search{
+            background-color: rgba(255, 255, 255, 0.139);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="header">
+                <img src="logo.png" alt="" width="100px" >
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact US</a></li>
+                    <li>
+                        <div class="search">
+                            <input type="text" placeholder="Search..."><button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </li>   
+                </ul>
+            </div>
+            <div class="item-box">
+                <div class="item-heading">
+                    <div class="search">
+                        <input type="text" placeholder="Search..."><button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button id="srch">SEARCH</button>
+                    </div>
+                </div>
+                
+            </div>
+           
+            
+        </div>
+    </section>
+</body>
+</html>
