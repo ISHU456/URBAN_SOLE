@@ -1,0 +1,44 @@
+{
+  "name": "urban-sole",
+  "version": "1.0.0",
+  "description": "A modern, responsive e-commerce website for trendy footwear built with HTML, CSS, and JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx live-server",
+    "build": "echo 'No build process configured yet'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ISHU456/URBAN_SOLE.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "shoes",
+    "footwear",
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "student-project",
+    "web-development"
+  ],
+  "author": {
+    "name": "ISHU ANAND MALVIYA",
+    "email": "",
+    "url": "https://www.linkedin.com/feed/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ISHU456/URBAN_SOLE/issues"
+  },
+  "homepage": "https://github.com/ISHU456/URBAN_SOLE#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -6,12 +6,12 @@
     <title>SIGNUP</title>
     <style>
         body{
+            position: relative;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: rgba(172, 83, 255, 0.739);
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url(pexels-pixabay-268533.jpg);
+            background-image: url(../assets/images/pexels-pixabay-268533.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -19,22 +19,22 @@
         }
         .reg{
             margin-top: 120px;
-            background-color: rgba(107, 107, 107, 0.552);
+            background-color: rgba(66, 66, 66, 0.527);
+            color: white;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             padding: 20px 20px 20px 20px;
             border-radius: 10px 10px;
             transition: 0.3s ease-out;
-            color: white;
             
         }
         .head-txt{
             display: flex;
             justify-content: center;
             margin-bottom: 30px;
-            color: white;
-            text-shadow: 0px 0px 10px rgb(243, 5, 255);
+            color: rgb(255, 255, 255);
+            
         }
         .reg:hover{
             scale:110%;
@@ -51,14 +51,13 @@
         }
 
         .btn-cont{
-            padding-top: 20px;
+            padding-top: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 30px;
         }
         .b1{
-            padding-top: 20px;
             padding: 10px 60px;
             border-width: 0px;
             border-radius: 10px;
@@ -70,6 +69,9 @@
             color: black;
             font-size: 900;
         }
+        .b1:hover{
+            scale: 110%;
+        }
         .b2{
             padding: 10px 60px;
             border-width: 0px;
@@ -77,31 +79,31 @@
             color: white;
             font-weight: 700;
             border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
         }
-
+        .b2:hover{
+            scale:110%;
+        }
     </style>
 </head>
 <body>
     <section>
         <div class="reg">
             <div class="head-txt">
-                <h1>SIGN UP</h1>
+                <h1>LOGIN</h1>
             </div>
             
             <form action="">
-                <label class="txt">Username</label><br>
-                <input class = "ip" type="text" maxlength="20" placeholder="Username"><br>
                 <label class="txt" for="">Email</label><br>
                 <input class = "ip" type="email" placeholder="Email"><br>
                 <label class="txt" for="">Password</label><br>
                 <input class = "ip" type="password" placeholder="Password"><br>
-                <label class="txt" for="">Confirm Password</label><br>
-                <input class = "ip" type="password" placeholder="Confirm Password"><br>
                 <input type="checkbox"><label for="">Remember me</label><br>
-                <p>By creating an account you agree to our <span style="color: blue;font-weight: 700;">Terms & Privacy.</span></p>
+                <p>By creating an account you agree to our <span style="color: rgb(0, 0, 255);font-weight: 700;">Terms & Privacy.</span></p>
                 <div class="btn-cont">
-                    <button class="b1" > <a href="index.html">Cancel</a></button>
-                    <button class="b2">Submit</button>
+                    <button class="b1" > <a href="../index.html">Cancel</a></button>
+                    <button class="b2">LOGIN</button>
                 </div>
             </form>
         </div>
@@ -110,8 +112,8 @@
         const btn1 = document.querySelector('.b2') ;
         const body = document.getElementById('body');
         btn1.addEventListener('click',()=>{
-            document.write("FORM SUBMITTED");
-            window.alert("SUBMITTED SUCCESSFULLY");
+            document.write("LOGGED IN SUCCESSFULLY");
+            window.alert("LOGGED IN SUCCESSFULLY");
         })
 
     </script>
